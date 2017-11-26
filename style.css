@@ -536,12 +536,13 @@ a:hover, a:active {
 	display: block;
 }
 
-/* Adjusted min-width from 37.5em to ensure proper float:right of li.home-link-site-title */
+/* Adjusted min-width from 37.5em to ensure proper float:right of home__title-link */
 
 @media screen and (min-width: 15em) {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}
@@ -926,31 +927,17 @@ body, html, a {
 }
 
 @media screen and (min-width: 901px) {
-	li.home-link-site-title {
-		display: none;
-		padding: 0;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	li.home-link-site-title {
-		float: left;
+	.home__title-link {
+		display: none !important;
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.main-navigation a {
-		color: white;
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-top: 0px;
 		letter-spacing: 3.5px;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.main-navigation a:hover {
-		color: #BFA21A;
 	}
 }
 
