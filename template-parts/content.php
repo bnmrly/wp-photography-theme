@@ -25,10 +25,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-<!-- BM CHANGE Remove .entry-footer -->
-
-	<!--<footer class="entry-footer">
-	 <?php bianco_nero_entry_footer(); ?>
- </footer>  .entry-footer -->
 </article><!-- #post-## -->
