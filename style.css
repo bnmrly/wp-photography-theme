@@ -397,7 +397,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+/*button, input[type="button"], input[type="reset"], input[type="submit"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
@@ -442,7 +442,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 textarea {
 	padding-left: 3px;
 	width: 100%;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Navigation
@@ -451,26 +451,20 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-
 a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
+	text-decoration: none;
 }
 
 a:hover, a:active {
+	color: yellow;
 	outline: 0;
 }
+
+.current_page_item a:hover {
+	color: yellow;
+}
+
+
 
 /*--------------------------------------------------------------
 ## Menus
@@ -535,7 +529,7 @@ a:hover, a:active {
 }
 
 .main-navigation .current_page_item>a, .main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current-menu-ancestor>a {
-	color: #144184;
+	color: white;
 }
 
 /* Small menu. */
@@ -797,41 +791,91 @@ embed, iframe, object {
 	margin: 0 8px 8px 0;
 }
 
-#site-navigation {
-	padding-top: 15px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+/*--------------------------------------------------------------
+## My Changes
+--------------------------------------------------------------*/
+
+/* General */
+
+body, html, a {
+	font-family: 'Futura', Trebuchet MS, Arial, sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+
+/* Navigation */
+
+.main-navigation {
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-navigation a {
-	color: #99281A;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 0px;
 	letter-spacing: 7px;
 }
 
-a:hover {
-	color: #BFA21A;
+/* Footer */
+
+.site-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
-.page-item-33 {
-	float: right!important;
+.site-info--contact {
+	float: right;
+	color: white;
+	font-size: 0.8em;
+	margin: 0 1em 1em 0;
 }
+
+/* Responsive menu plugin */
+
+ .responsive_menu_pro_menu ul {
+	margin-left: -1em !important;
+  margin-top: 1em;
+}
+
+/* Gallery */
 
 #gallery-1 {
 	margin-top: 1em;
 	margin-bottom: -2.5em;
 }
 
-body, html, a {
-	font-family: 'Futura', Trebuchet MS, Arial, sans-serif;
-	font-weight: 300;
+
+/* Specific pages */
+
+/* Home page */
+
+.page-id-4 {
+  background-image: url("http://benmarleyphotography.co.uk/wp-content/uploads/2016/01/Strangers_Venice_1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
+
+
+
+
+
+
+
 
 .page-content, .entry-content, .entry-summary {
 	margin: 0;
 }
+
+
+
+
+/* Media Queries */
+
+/* ...and Responsive Menu plugin */
 
 @media screen and (max-width: 400px) {
 	#responsive_menu_pro .responsive_menu_pro_menu li a {
@@ -839,98 +883,37 @@ body, html, a {
 		padding-top: 10px;
 		padding-bottom: 0px;
 	}
-}
+}*/
 
-@media screen and (min-width: 401px) and (max-width: 580px) and (orientation: portrait) {
+/*@media screen and (min-width: 401px) and (max-width: 580px) and (orientation: portrait) {
 	#responsive_menu_pro .responsive_menu_pro_menu li a {
 		font-size: 0.6em !important;
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
-}
+}*/
 
-@media screen and (min-width: 401px) and (max-width: 580px) and (orientation: landscape) {
+/*@media screen and (min-width: 401px) and (max-width: 580px) and (orientation: landscape) {
 	#responsive_menu_pro .responsive_menu_pro_menu li a {
 		font-size: 0.6em !important;
 		height: 55px;
 		line-height: 55px;
 	}
-}
+}*/
 
-@media screen and (min-width: 581px) and (max-width: 899px) and (orientation: landscape) {
+/*@media screen and (min-width: 581px) and (max-width: 899px) and (orientation: landscape) {
 	#responsive_menu_pro .responsive_menu_pro_menu li a {
 		font-size: 0.6em !important;
 		height: 60px;
 		line-height: 60px;
 	}
-}
+} */
 
-#responsive_menu_pro .responsive_menu_pro_menu ul {
-	margin-left: -40px !important;
-}
-
-.site-info {
-	float: right;
-	color: #144184;
-	display: inline;
-	padding-right: 15px;
-	padding-bottom: 10px;
-	font-size: 0.7rem;
-}
-
-.site-info-contact-page-only-left {
-	float: left;
-	color: #99281A;
-	display: block;
-	padding-left: 15px;
-	padding-bottom: 10px;
-	font-size: 0.7rem;
-}
-
-.page-id-33 .site-info-contact-page-only-right {
-	float: right;
-	color: #BFA21A;
-	display: block !important;
-	padding-right: 15px;
-	padding-bottom: 10px;
-	font-size: 0.7rem;
-}
-
-.page-id-33 .site-info {
-	display: none;
-}
-
-.page-id-38 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-	display: none;
-}
-
-.page-id-18 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-	display: none;
-}
-
-.page-id-4 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-	display: none;
-}
-
-.page-id-4 .site-footer {
-	margin-top: -2em;
-}
-
-.page-id-33 .site-footer {
-	margin-top: -2em;
-}
-
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
 	.page-id-4 {
 		overflow: hidden;
 	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-33 {
-		overflow: hidden;
-	}
-}
+}*/
 
 @media screen and (max-width: 900px) {
 	.imgcrop {
@@ -951,13 +934,13 @@ body, html, a {
 
 @media screen and (max-width: 900px) {
 	li.home-link-site-title {
-		float: right;
+		float: left;
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.main-navigation a {
-		color: #99281A;
+		color: white;
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-top: 0px;
@@ -968,28 +951,6 @@ body, html, a {
 @media screen and (max-width: 900px) {
 	.main-navigation a:hover {
 		color: #BFA21A;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-33 .site-info-contact-page-only-right {
-		position: absolute;
-		top: 96%;
-		left: 0%;
-		right: 0%;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-33 .site-info {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-38 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-		display: none;
 	}
 }
 
@@ -1005,51 +966,9 @@ body, html, a {
 	}
 }
 
-@media screen and (max-width: 900px) {
-	.page-id-18 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-		display: none;
-	}
-}
 
-@media screen and (max-width: 900px) {
-	.page-id-4 .site-info-contact-page-only-left, .site-info-contact-page-only-right {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-4 .site-info {
-		position: absolute;
-		top: 96%;
-		color: #BFA21A !important;
-		left: 0%;
-		right: 0%;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-38 .site-info {
-		position: absolute;
-		color: #BFA21A;
-		left: 0%;
-		right: 0%;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-18 .site-info {
-		position: absolute;
-		color: #BFA21A;
-		left: 0%;
-		right: 0%;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 401px) {
+/*@media screen and (max-width: 401px) {
 	#responsive_menu_pro_menu, #menu-item-165, .menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-165, #menu-item-166, .menu-item menu-item-type-post_type menu-item-object-page menu-item-166, #menu-item-167, .menu-item menu-item-type-post_type menu-item-object-page menu-item-167, #menu-item-168, .menu-item menu-item-type-post_type menu-item-object-page menu-item-168 {
 		max-width: 60% !important;
 	}
-}
+}*/
