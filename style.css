@@ -456,15 +456,13 @@ a {
 }
 
 a:hover, a:active {
-	color: yellow;
+	color: #fbfb94;
 	outline: 0;
 }
 
 .current_page_item a:hover {
-	color: yellow;
+	color: #fbfb94;
 }
-
-
 
 /*--------------------------------------------------------------
 ## Menus
