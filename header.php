@@ -49,10 +49,8 @@
 
 <!-- Div below ensures there is a link to the home-page displayed after the responsive menu hides #primary-menu -->
 
-<div>
-	<ul>
-		<li class="home-link-site-title"><a href="http://localhost/bmphoto/">BEN MARLEY PHOTOGRAPHY</a></li>
-	</ul>
+<div class="home__title">
+	<a class="home__title-link" href="http://localhost/bmphoto/">BEN MARLEY PHOTOGRAPHY</a>
 </div>
 
 			<!-- Remove Primary Menu button
