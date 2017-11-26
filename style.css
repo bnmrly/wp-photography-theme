@@ -817,7 +817,9 @@ body, html, a {
 
 /* Footer */
 
-.site-footer {
+/* Fixes footer on home page */
+
+.page-id-4 .site-footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
