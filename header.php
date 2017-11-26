@@ -47,32 +47,19 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-<!-- BM CHANGE Created a new div to ensure there is a link to the home-page displayed after the responsive menu hides #primary-menu -->
+<!-- Div below ensures there is a link to the home-page displayed after the responsive menu hides #primary-menu -->
 
 <div>
 	<ul>
-		<li class="home-link-site-title"><a href="http://localhost/bmphoto/">ben marley photography</a></li>
+		<li class="home-link-site-title"><a href="http://localhost/bmphoto/">BEN MARLEY PHOTOGRAPHY</a></li>
 	</ul>
 </div>
 
-			<!-- BM CHANGE Remove Primary Menu button
+			<!-- Remove Primary Menu button
 
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bianco_nero' ); ?></button> -->
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-<!-- BM Attempted change - does commenting out the below do anything? -->
-
-
 <div id="content" class="site-content">
-
-
-
-	<!-- BM Attempted change - Trying out Popr plugin  <script>
-$(document).ready(function() {
-	 $('.popr').popr();
-});
-</script>
-
--->
