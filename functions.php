@@ -121,9 +121,6 @@ add_action( 'widgets_init', 'bianco_nero_widgets_init' );
 
 	wp_enqueue_script( 'bianco_nero-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'swipebox'), '20120206', true );
 
- // BM CHANGE Hide the default primary menu when screen size is adjusted.
-		 // wp_enqueue_script( 'bianco_nero-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
