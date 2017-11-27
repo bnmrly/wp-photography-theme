@@ -29,10 +29,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Navigation
 	## Links
 	## Menu
+	## Responsive Menu Plugin
+# Content
+	## Home Page
 # Accessibility
 # Clearings
 # Media
 	## Galleries
+# Media Queries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -340,7 +344,7 @@ img {
 
 /* Footer */
 
-/* Fixes footer on home page */
+/* Fixes footer on Home Page */
 
 .page-id-4 .site-footer {
 	position: absolute;
@@ -408,17 +412,28 @@ a:hover, a:active {
 	letter-spacing: 7px;
 }
 
-/* Floats the non-home page menu items right */
+/* Floats the non-Home Page menu items right */
 
 li:nth-child(3), li:nth-child(2) {
 	float: right;
 }
 
 /*--------------------------------------------------------------
+## Responsive Menu Plugin
+--------------------------------------------------------------*/
+
+.responsive_menu_pro_menu ul {
+ margin-left: -1em !important;
+ margin-top: 1em;
+}
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
-/* Home page */
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
 
 .page-id-4 {
   background-image: url("http://benmarleyphotography.co.uk/wp-content/uploads/2016/01/Strangers_Venice_1.jpeg");
@@ -509,37 +524,8 @@ li:nth-child(3), li:nth-child(2) {
 }
 
 /*--------------------------------------------------------------
-## My Changes
+# Media Queries
 --------------------------------------------------------------*/
-
-
-
-
-
-/* Responsive menu plugin */
-
- .responsive_menu_pro_menu ul {
-	margin-left: -1em !important;
-  margin-top: 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
 
 /* ...and Responsive Menu plugin */
 
