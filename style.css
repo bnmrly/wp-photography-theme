@@ -408,8 +408,12 @@ a:hover, a:active {
 	outline: 0;
 }
 
+.current_page_item a {
+	font-weight: 500;
+}
+
 .current_page_item a:hover {
-	color: #fbfb94;
+	color: #fbfb94 !important;
 }
 
 /*--------------------------------------------------------------
