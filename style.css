@@ -31,7 +31,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 # Accessibility
 # Clearings
-# Infinite scroll
 # Media
 	## Captions
 	## Galleries
@@ -442,26 +441,6 @@ a:hover, a:active {
 
 .clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
 	clear: both;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-
-.infinite-scroll .posts-navigation,
-/* Older / Newer Posts Navigation (always hidden) */
-
-.infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-
-.infinity-end.neverending .site-footer {
-	display: block;
 }
 
 /*--------------------------------------------------------------
