@@ -255,11 +255,15 @@ th {
 --------------------------------------------------------------*/
 
 body, button, input, select, textarea {
-	color: #404040;
-	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+}
+
+body, html, a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -365,10 +369,11 @@ a:hover, a:active {
 .main-navigation {
 	float: left;
 	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation ul {
-	display: none;
+	display: block;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -381,11 +386,11 @@ a:hover, a:active {
 
 .main-navigation a {
 	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	letter-spacing: 7px;
 }
-
-.main-navigation ul {
-		display: block;
-	}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -471,27 +476,8 @@ a:hover, a:active {
 ## My Changes
 --------------------------------------------------------------*/
 
-/* General */
-
-body, html, a {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 100;
-	color: white;
-}
-
-
 /* Navigation */
 
-.main-navigation {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.main-navigation a {
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 0px;
-	letter-spacing: 7px;
-}
 
 /* Footer */
 
