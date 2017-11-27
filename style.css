@@ -367,12 +367,10 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 
-/*.main-navigation {
-	clear: both;
-	display: block;
+.main-navigation {
 	float: left;
 	width: 100%;
-}*/
+}
 
 .main-navigation ul {
 	display: none;
