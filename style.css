@@ -745,8 +745,8 @@ embed, iframe, object {
 /* General */
 
 body, html, a {
-	font-family: 'Futura', Trebuchet MS, Arial, sans-serif;
-	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
 	color: white;
 }
 
@@ -776,8 +776,7 @@ body, html, a {
 
 .site-info--contact {
 	float: right;
-	color: white;
-	font-size: 0.8em;
+	font-weight: 200;
 	margin: 0 1em 1em 0;
 }
 
@@ -906,4 +905,14 @@ body, html, a {
 	#responsive_menu_pro_menu, #menu-item-165, .menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-165, #menu-item-166, .menu-item menu-item-type-post_type menu-item-object-page menu-item-166, #menu-item-167, .menu-item menu-item-type-post_type menu-item-object-page menu-item-167, #menu-item-168, .menu-item menu-item-type-post_type menu-item-object-page menu-item-168 {
 		max-width: 60% !important;
 	}
+}*/
+
+
+li:nth-child(3), li:nth-child(2) {
+	float: right;
+}
+
+
+/*.page-item-38 {
+	display: none !important;
 }*/

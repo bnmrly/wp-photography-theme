@@ -113,6 +113,12 @@ add_action( 'widgets_init', 'bianco_nero_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+function custom_add_google_fonts() {
+	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600', false );
+ }
+add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
+
  function bianco_nero_scripts() {
 	wp_enqueue_style( 'bianco_nero-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'swipebox', get_template_directory_uri().'/swipebox/css/swipebox.min.css');
