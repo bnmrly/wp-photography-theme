@@ -576,18 +576,6 @@ li:nth-child(3), li:nth-child(2) {
 	}
 }
 
-@media screen and (max-width: 900px) {
-	.page-id-18 {
-		overflow-x: hidden;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.page-id-38 {
-		overflow-x: hidden;
-	}
-}
-
 
 /*@media screen and (max-width: 401px) {
 	#responsive_menu_pro_menu, #menu-item-165, .menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-165, #menu-item-166, .menu-item menu-item-type-post_type menu-item-object-page menu-item-166, #menu-item-167, .menu-item menu-item-type-post_type menu-item-object-page menu-item-167, #menu-item-168, .menu-item menu-item-type-post_type menu-item-object-page menu-item-168 {
