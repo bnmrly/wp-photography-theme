@@ -488,9 +488,7 @@ a:hover, a:active {
 	display: block;
 }
 
-/* Adjusted min-width from 37.5em to ensure proper float:right of home__title-link */
-
-@media screen and (min-width: 15em) {
+@media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
