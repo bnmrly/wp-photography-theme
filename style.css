@@ -567,16 +567,6 @@ li:nth-child(3), li:nth-child(2) {
 } */
 
 
-@media screen and (max-width: 900px) {
-	.main-navigation a {
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 0px;
-		letter-spacing: 3.5px;
-	}
-}
-
-
 /*@media screen and (max-width: 401px) {
 	#responsive_menu_pro_menu, #menu-item-165, .menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-165, #menu-item-166, .menu-item menu-item-type-post_type menu-item-object-page menu-item-166, #menu-item-167, .menu-item menu-item-type-post_type menu-item-object-page menu-item-167, #menu-item-168, .menu-item menu-item-type-post_type menu-item-object-page menu-item-168 {
 		max-width: 60% !important;
