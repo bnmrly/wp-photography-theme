@@ -338,6 +338,22 @@ img {
 	/* Adhere to container width. */
 }
 
+/* Footer */
+
+/* Fixes footer on home page */
+
+.page-id-4 .site-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.site-info--contact {
+	float: right;
+	font-weight: 200;
+	margin: 0 1em 1em 0;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -363,7 +379,7 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-## Menus
+## Menu
 --------------------------------------------------------------*/
 
 .main-navigation {
@@ -390,6 +406,26 @@ a:hover, a:active {
 	padding-right: 15px;
 	padding-top: 0px;
 	letter-spacing: 7px;
+}
+
+/* Floats the non-home page menu items right */
+
+li:nth-child(3), li:nth-child(2) {
+	float: right;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Home page */
+
+.page-id-4 {
+  background-image: url("http://benmarleyphotography.co.uk/wp-content/uploads/2016/01/Strangers_Venice_1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -437,13 +473,13 @@ a:hover, a:active {
 # Clearings
 --------------------------------------------------------------*/
 
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after {
 	content: "";
 	display: table;
 	table-layout: fixed;
 }
 
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after {
 	clear: both;
 }
 
@@ -456,8 +492,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 
 .gallery {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin-top: 1em;
+	margin-bottom: -2.5em;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -476,24 +512,9 @@ a:hover, a:active {
 ## My Changes
 --------------------------------------------------------------*/
 
-/* Navigation */
 
 
-/* Footer */
 
-/* Fixes footer on home page */
-
-.page-id-4 .site-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-.site-info--contact {
-	float: right;
-	font-weight: 200;
-	margin: 0 1em 1em 0;
-}
 
 /* Responsive menu plugin */
 
@@ -502,25 +523,6 @@ a:hover, a:active {
   margin-top: 1em;
 }
 
-/* Gallery */
-
-#gallery-1 {
-	margin-top: 1em;
-	margin-bottom: -2.5em;
-}
-
-
-/* Specific pages */
-
-/* Home page */
-
-.page-id-4 {
-  background-image: url("http://benmarleyphotography.co.uk/wp-content/uploads/2016/01/Strangers_Venice_1.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  overflow: hidden;
-}
 
 
 
@@ -529,9 +531,10 @@ a:hover, a:active {
 
 
 
-.page-content, .entry-content, .entry-summary {
-	margin: 0;
-}
+
+
+
+
 
 
 
@@ -620,14 +623,4 @@ a:hover, a:active {
 	#responsive_menu_pro_menu, #menu-item-165, .menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-165, #menu-item-166, .menu-item menu-item-type-post_type menu-item-object-page menu-item-166, #menu-item-167, .menu-item menu-item-type-post_type menu-item-object-page menu-item-167, #menu-item-168, .menu-item menu-item-type-post_type menu-item-object-page menu-item-168 {
 		max-width: 60% !important;
 	}
-}*/
-
-
-li:nth-child(3), li:nth-child(2) {
-	float: right;
-}
-
-
-/*.page-item-38 {
-	display: none !important;
 }*/
