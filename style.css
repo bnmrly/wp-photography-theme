@@ -31,9 +31,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 # Accessibility
 # Clearings
-# Content
-	## Posts and pages
-	## Comments
 # Infinite scroll
 # Media
 	## Captions
@@ -445,35 +442,6 @@ a:hover, a:active {
 
 .clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
 	clear: both;
-}
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-
-.page-content, .entry-content, .entry-summary {
-	margin: 1.5em 0 0;
-}
-
-/*.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}*/
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
 }
 
 /*--------------------------------------------------------------
