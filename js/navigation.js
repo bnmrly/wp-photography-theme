@@ -80,6 +80,14 @@
 	}
 } )();
 
+/* Replace default WordPress gallery with swipebox - using compatibility mode */
+
 jQuery(document).ready( function() {
 	jQuery( '.gallery-icon a, .ngg-gallery-thumbnail a' ).swipebox();
+});
+
+/* Toggle nav visibility when responsive menu is opened */
+
+jQuery("#responsive_menu_pro_button").click(function(){
+	jQuery("#site-navigation").toggle();
 });
