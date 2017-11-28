@@ -422,7 +422,7 @@ li:nth-child(3), li:nth-child(2) {
 ## Responsive Menu Plugin
 --------------------------------------------------------------*/
 
-/* NB: I'm using !important here to override the plugin owner's css, which uses !important throughout. */
+/* NB: The excessive use of !important here is necessary to override the plugin author's css, which uses !important throughout. */
 
 #responsive_menu_pro {
 	background-color: transparent !important;
