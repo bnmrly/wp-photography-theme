@@ -422,10 +422,65 @@ li:nth-child(3), li:nth-child(2) {
 ## Responsive Menu Plugin
 --------------------------------------------------------------*/
 
+/* NB: I'm using !important here to override the plugin owner's css, which uses !important throughout. */
+
+#responsive_menu_pro {
+background-color: rgba(255,255,255, 0.1) !important;
+}
+
+#responsive_menu_pro_button #responsive_menu_x {
+	color: black !important;
+	font-size: 3em !important;
+}
+
+#responsive_menu_pro.responsive_menu_pro_opened {
+	height: 100vh !important;
+}
+
+#responsive_menu_pro .responsive_menu_pro_menu li a:hover {
+	background-color: transparent !important;
+}
+
+/* Remove border hack*/
+
+#responsive_menu_pro .responsive_menu_pro_menu li a {
+	border-top: 0px solid transparent !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+
+#responsive_menu_pro .responsive_menu_pro_menu li.current_page_item > a {
+	background-color: transparent !important;
+	color: black !important;
+}
+
+#responsive_menu_pro .responsive_menu_pro_menu li.current_page_item > a:hover {
+	background-color: transparent !important;
+	color: #fbfb94 !important;
+}
+
 .responsive_menu_pro_menu ul {
  margin-left: -1em !important;
  margin-top: 1em;
 }
+
+/* Change menu styles on 'Cities' and 'Street Photography' pages */
+
+.page-id-38 #responsive_menu_pro, .page-id-18 #responsive_menu_pro {
+background-color: white !important;
+}
+
+
+#responsive_menu_pro.responsive_menu_pro_opened.main-navigation {
+	display: none !important;
+}
+
+/*.page-id-38 #responsive_menu_pro_button .responsive_menu_pro_button_lines .responsive_menu_pro_button_line {
+	background: red !important;
+}*/
+
+
+
 
 /*--------------------------------------------------------------
 # Content
@@ -528,12 +583,14 @@ li:nth-child(3), li:nth-child(2) {
 
 /* ...and Responsive Menu plugin */
 
-/*@media screen and (max-width: 400px) {
+/* Font-tweaks to display links correctly */
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
 	#responsive_menu_pro .responsive_menu_pro_menu li a {
 		font-size: 0.6em !important;
 		padding-top: 10px;
 		padding-bottom: 0px;
-	}*/
+	}
 }
 
 /*@media screen and (min-width: 401px) and (max-width: 580px) and (orientation: portrait) {
