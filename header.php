@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="home__title">
-				<a class="home__title-link" href="http://localhost/bmphoto/">BEN MARLEY PHOTOGRAPHY</a>
+				<a class="home__title-link" href="http://benmarleyphotography.co.uk/">BEN MARLEY PHOTOGRAPHY</a>
 			</div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
